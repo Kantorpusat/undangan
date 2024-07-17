@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>undangan manten </title>
+    
+     <!-- ini font badmalah-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+      
+       <!--ini font nama -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+      
+      <style>
+      
+        .bis {
+        font-family: "Aref Ruqaa Ink", serif;
+        font-weight: 400;
+        font-style: normal;
+        position: relative;
+        margin-top: 0;
+        top: 20px;
+          }
+      body {
+        margin:0 ;
+        font-size: 18px;
+        font-family: Trebuchet MS;
+        font-weight: bold;
+        color: #0627b7;
+      }
+      .box {
+        width:100% ;
+        height:630px;
+        background-color: #eee;
+        background-image: url('bg.jpg');
+        background-size: 100%;
+        top: 0;
+        margin: 0;
+        padding:0;
+        margin: auto;
+        box-sizing: ;
+      }
+     .box .nma {
+       text-align: left;
+        font-family: "Tangerine", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-family: "Tangerine", cursive;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 60px;
+        text-shadow: 3px 3px 3px #ababab;
+        position: relative;
+        margin:0;
+        top: -60px;
+        bottom: -10px;
+        padding: 10px;
+        text-shadow: 2px 1px 1px red;
+      }
+      p {
+        text-align: center;
+        padding: 0;
+        position: relative;
+        top: -70px;
+        bottom: 0;
+        font-size: 16px;
+      }
+      .salam {
+        font-family: Tahoma;
+        font-style: italic;
+        font-size: 14;
+        padding-top: 80px;
+      }
+      .pengantar{
+        position: relative;
+        top: -80px;
+        font-size: 15px;
+        padding: 10px;
+        padding-top: 0;
+      }
+      .dan {
+        padding: 0;
+        margin-top: -40px;
+        margin-bottom: -40px;
+        font-size:150px;
+        font-family: "Tangerine", cursive;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        color: #000;
+         text-shadow:3px 2px 1px #ffff;
+}
+       .box .perem {
+         padding: 0;
+         margin-top: -30px;
+         margin-right: 20px;
+          text-align: right;
+        }
+        
+         .box .aki {
+         margin-left: 15px;
+        text-align: left;
+        }
+         .box .bap1 {
+        margin-left: 30px;
+        text-align: left;
+        padding-top: 0;
+        margin-top: -3px;
+        font-size: 12px;
+        }
+        
+         .box .bap2 {
+        font-size: 12px;
+         margin-right: 20px;
+          text-align: right;
+          padding: 0;
+          margin-top: 3px;
+        }
+        .acara {
+          text-align: justify;
+        }
+        body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0px;
+    }
+    h1 {
+    font-size: 24px;
+    margin-top: -40px;
+  }
+  .countdown {
+    font-size: 16px;
+    margin-top: 0;
+  }
+      
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <p class="bis">بسم الله الرحمن الرحيم</p>
+      <p class="salam">Assalamualaikum 
+      <br>
+      Warohmatullohi Wabarokatuh</p>
+      <p class="pengantar">---------------<br>
+        Dengan memohon Ridho dan Rahmat Allah subhanah wata'ala,
+      Kami mengundang bapak/ibu/saudara/i <br> untuk hadir pada pernikahan kami
+      </p>
+      <h1 class="nma aki">M. Nashan S.</h1>
+      <p class="bap1">putra bapak sanusi dan ibu sutoya</p>
+      <p class="dan">&</p>
+      <h1 class="nma perem">S. Millah S.</h1>
+      <p class="bap2">putri bapak munhana dan ibu soleha</p>
+      <p>Isyallah akan di laksanakan pada :</p>
+      <div class="acara">
+      <p>Hari : selasa <br>
+      Tgl : 23 juli M. 2025 / 21 syawal H. 1446 <br>
+      Tempat : panyaksagan klampis 
+      </p>
+      </div>
+<h1>Acara kurang </h1>
+
+<div class="countdown" id="countdown"></div>
+
+<script>
+  // Tanggal akhir yang dihitung mundur (misalnya Tahun Baru)
+  const countdownDate = new Date('juli 7, 2025 00:00:00').getTime();
+
+  // Memperbarui hitungan mundur setiap 1 detik
+  const countdownTimer = setInterval(function() {
+    const now = new Date().getTime();
+    const distance = countdownDate - now;
+
+    // Perhitungan waktu untuk hari, jam, menit, dan detik
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Menampilkan hasil dalam elemen dengan id "countdown"
+    document.getElementById('countdown').innerHTML = `
+      ${days} hari ${hours} jam ${minutes} menit ${seconds} detik
+    `;
+
+    // Jika hitungan mundur selesai, tampilkan pesan
+    if (distance < 0) {
+      clearInterval(countdownTimer);
+      document.getElementById('countdown').innerHTML = "HAPPY NEW YEAR!";
+    }
+  }, 1000); // 1 detik
+</script>
+
+    </div>
+  </body>
+</html>
